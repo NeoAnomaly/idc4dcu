@@ -41,6 +41,9 @@ class BinaryReader:
     def tell(self):
         return self._file.tell()
 
+    def read_raw(self, count):
+        return self._file.read(count)
+
     def read_s8(self):
         return self._read('int8')
 
