@@ -37,8 +37,8 @@ class DelphiCompiledUnitReader(BinaryReader):
                         return (int.from_bytes(index_bytes, sys.byteorder), ndx)
 
 
-    def read_index(self):
-        pass
+    def read_index(self, version):
+        assert False
 
     def read_name(self, version):
         length = self.read_u8()
@@ -46,4 +46,6 @@ class DelphiCompiledUnitReader(BinaryReader):
         if length == 0xFF and version >= DelphiCompiledUnitVersions.DCU_VERSION_D2009:
             length = self.read_u32()
 
-        return self.read_raw(length).decode('ascii')
+        value = self.read_raw(length)
+
+        return value.decode('ascii')

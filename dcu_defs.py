@@ -1,11 +1,21 @@
 class DelphiCompiledUnitChunks:
-    UNIT_FLAGS = 0x96
+    STOP = 0x63
+    INTERFACE_USES = 0x64
+    IMPL_USES = 0x65
+    IMPORT_TYPE = 0x66
+    IMPORT_VALUE = 0x67
+    DLL = 0x68
+    IMPORT_TYPE_DEF = 0x6E
     SRC = 0x70
     OBJ = 0x71
     RESOURCE = 0x72
     ASM = 0x73
     ASSEMBLY_SRC = 0x74
     INLINE_SRC = 0x76
+    UNIT_FLAGS = 0x96
+    CONST_ADD_INFO = 0x9C
+    STOP2 = 0x9F
+
 
 class DelphiCompiledUnitVersions:
     DCU_VERSION_D2 = 2
