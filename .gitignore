@@ -1,3 +1,9 @@
+# Project specific
+
+.idea
+_trash
+_old
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
